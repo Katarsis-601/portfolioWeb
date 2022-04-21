@@ -5,23 +5,31 @@ $textDark: #5c527f;
 body {
   background-color: $background;
 }
-
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .App {
   max-width: 1440px;
   display: flex;
   margin: 0 auto;
+  flex-flow: column wrap;
   justify-content: center;
   align-content: center;
 }
 
 .container {
+  max-height: 550px;
+  overflow: auto;
   position: relative;
+  margin-top: 60px;
   width: 90%;
 }
 
 .profile {
   display: flex;
-  margin-top: 60px;
+  align-items: center;
+  justify-content: space-around;
   flex-flow: row wrap;
 
   .title-container {
@@ -45,11 +53,20 @@ body {
       font-weight: bold;
     }
   }
+  .profile-img {
+    box-shadow: 0px 0px 10px $textDark;
+    border-radius: 150px;
+    width: 25%;
+    height: 25%;
+  }
 }
 
 .contact {
-  flex-direction: row;
+  width: 90%;
   display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-flow: row wrap;
 
   .cv {
     cursor: pointer;
@@ -66,5 +83,46 @@ body {
   img {
     width: 40px;
     margin-left: 30px;
+  }
+  img:nth-child(4) {
+    width: 45px;
+    height: 35px;
+  }
+}
+
+nav {
+  background-color: $textDark;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  color: white;
+  a {
+    padding: 15px 100px;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin: 0;
+  }
+  li {
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    padding: 20px;
+    transition: 0.5s;
+  }
+  li:hover {
+    background-color: $background-light;
+  }
+  li:first-child:hover {
+    border-top-left-radius: 20px;
+  }
+  li:last-child:hover {
+    border-top-right-radius: 20px;
   }
 }
