@@ -1,38 +1,63 @@
+body {
+  background-color: #261c2c;
+}
+
 .App {
-  text-align: center;
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  position: relative;
+  width: 90%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile {
+  display: flex;
+  margin-top: 60px;
+  flex-flow: row wrap;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profile .title-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.profile .title-container .name {
+  margin-bottom: 0;
+  font-size: 70px;
+  color: #6e85b2;
+}
+.profile .title-container .name span {
+  display: block;
+}
+.profile .title-container .titleName {
+  font-size: 40px;
+  color: #5c527f;
+}
+.profile .title-container .tag {
+  color: #4a72c2;
+  font-weight: bold;
+}
+
+.contact {
+  flex-direction: row;
+  display: flex;
+}
+.contact .cv {
+  cursor: pointer;
+  border: none;
   color: white;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #5c527f;
+  transition: 0.5s;
 }
-
-.App-link {
-  color: #61dafb;
+.contact .cv:hover {
+  background-color: #6e85b2;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.contact img {
+  width: 40px;
+  margin-left: 30px;
+}/*# sourceMappingURL=App.css.map */

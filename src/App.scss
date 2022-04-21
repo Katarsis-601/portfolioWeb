@@ -1,0 +1,70 @@
+$background: #261c2c;
+$background-light: #3e2c41;
+$textLight: #6e85b2;
+$textDark: #5c527f;
+body {
+  background-color: $background;
+}
+
+.App {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+}
+
+.profile {
+  display: flex;
+  margin-top: 60px;
+  flex-flow: row wrap;
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+
+    .name {
+      margin-bottom: 0;
+      font-size: 70px;
+      color: $textLight;
+      span {
+        display: block;
+      }
+    }
+    .titleName {
+      font-size: 40px;
+      color: $textDark;
+    }
+    .tag {
+      color: #4a72c2;
+      font-weight: bold;
+    }
+  }
+}
+
+.contact {
+  flex-direction: row;
+  display: flex;
+
+  .cv {
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: $textDark;
+    transition: 0.5s;
+  }
+  .cv:hover {
+    background-color: $textLight;
+  }
+  img {
+    width: 40px;
+    margin-left: 30px;
+  }
+}
