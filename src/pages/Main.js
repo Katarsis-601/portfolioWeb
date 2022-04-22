@@ -1,7 +1,7 @@
 import github_icon from "../assets/github.svg";
 import linkedin_icon from "../assets/linkedin-app.svg";
-import gmail_icon from "../assets/gmail.webp";
-import { ContainerLayout } from "./component";
+import gmail_icon from "../assets/gmail.png";
+import { ContainerLayout } from "../components/mainComponent";
 import profile from "../assets/profile-img.png";
 export default function Main() {
   return (
@@ -23,16 +23,16 @@ export default function Main() {
             <a>Download CV</a>
           </button>
           <a target="_blank" href="https://github.com/Andrian-W">
-            <img src={github_icon} />
+            <img src={github_icon} alt="github icon" />
           </a>
           <a
             target="_blank"
             href="https://www.linkedin.com/in/andriano-wijaya-4a401a218/?trk=public_profile_browsemap&originalSubdomain=id"
           >
-            <img src={linkedin_icon} />
+            <img src={linkedin_icon} alt="linkedin icon" />
           </a>
           <a target="_blank" href="mailto:andrianow817@gmail.com">
-            <img src={gmail_icon} />
+            <img src={gmail_icon} alt="gmail icon" className="gmail_icon" />
           </a>
         </div>
       </ContainerLayout>

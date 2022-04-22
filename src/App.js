@@ -1,9 +1,9 @@
 import "./App.css";
-import Main from "./components/Main";
+import Main from "./pages/Main";
+import Repo from "./pages/Repositories";
+import Skills from "./pages/Skills";
 import Nav from "./components/Navigate";
-import { ContainerLayout } from "./components/component";
 import { Route, Routes } from "react-router";
-import Repo from "./components/Repositories";
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/repositories" element={<Repo />} />
+        <Route path="/skills" element={<Skills />} />
 
         <Route path="*" element={<p>404</p>} />
       </Routes>

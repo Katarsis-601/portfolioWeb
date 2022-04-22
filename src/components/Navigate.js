@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 export default function Nav() {
   return (
     <nav>
@@ -11,10 +11,7 @@ export default function Nav() {
           <Link to="/repositories" children="Repositories" />
         </li>
         <li>
-          <Link to="/education" children="Education" />
-        </li>
-        <li>
-          <Link to="/contact" children="Contact" />
+          <Link to="/skills" children="Skills" />
         </li>
       </ul>
     </nav>
