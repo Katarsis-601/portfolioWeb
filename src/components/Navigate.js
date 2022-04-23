@@ -8,10 +8,10 @@ export default function Nav() {
           <Link to="/" children="Home" />
         </li>
         <li>
-          <Link to="/repositories" children="Repositories" />
+          <Link to="/skills" children="Skills" />
         </li>
         <li>
-          <Link to="/skills" children="Skills" />
+          <Link to="/repositories" children="Repositories" />
         </li>
       </ul>
     </nav>

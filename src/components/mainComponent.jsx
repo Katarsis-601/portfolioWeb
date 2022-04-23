@@ -3,9 +3,10 @@ export function ContainerLayout(props) {
     <div
       className="container"
       style={{
+        maxWidth: "1200px",
         overflow: "auto",
         position: "relative",
-        marginTop: "90px",
+        marginTop: "40px",
         justifyContent: "center",
         width: "90%",
       }}
@@ -15,5 +16,21 @@ export function ContainerLayout(props) {
   );
 }
 export function CardLayout(props) {
-  return <div className="card">{props.children}</div>;
+  return (
+    <div
+      key={props}
+      className="card"
+      style={{
+        width: "30%",
+        backgroundColor: "#3e2c41",
+        display: "flex",
+        color: "white",
+        border: "none",
+        margin: "20px",
+        borderRadius: "20px",
+      }}
+    >
+      {props.children}
+    </div>
+  );
 }

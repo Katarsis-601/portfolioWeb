@@ -15,17 +15,23 @@ export default function Repo() {
   }, []);
   return (
     <ContainerLayout>
-      <main>
+      <div className="repo">
         {repo.map((data, i) => {
-          return (
-            <CardLayout key={i}>
-              <a href={data.html_url} target="_blank">
-                {data.name}
-              </a>
-            </CardLayout>
-          );
+          if ((data.private != "false") & (data.archived != "false")) {
+            return (
+              <CardLayout key={i}>
+                <a href={data.html_url} target="_blank">
+                  {data.name}
+                </a>
+                <p className="lang-project">
+                  <span>Language : </span>
+                  {data.language}
+                </p>
+              </CardLayout>
+            );
+          }
         })}
-      </main>
+      </div>
     </ContainerLayout>
   );
 }

@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/repositories" element={<Repo />} />
         <Route path="/skills" element={<Skills />} />
+        <Route path="/repositories" element={<Repo />} />
 
         <Route path="*" element={<p>404</p>} />
       </Routes>
