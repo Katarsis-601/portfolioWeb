@@ -18,8 +18,9 @@ a {
 
 .profile {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
+  text-align: center;
   flex-flow: row wrap;
 }
 .profile .title-container {
@@ -36,6 +37,7 @@ a {
 }
 .profile .title-container .titleName {
   font-size: 40px;
+  margin: 10px;
   color: #5c527f;
 }
 .profile .title-container .tag {
@@ -50,17 +52,18 @@ a {
 }
 
 .contact {
-  width: 90%;
   display: flex;
   margin: 0 auto;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column-reverse wrap;
+}
+.contact .social-meida {
+  margin: 20px;
 }
 .contact .cv {
   cursor: pointer;
   border: none;
   color: white;
-  margin-bottom: 7px;
   border-radius: 20px;
   padding: 20px;
   background-color: #5c527f;
@@ -72,7 +75,7 @@ a {
 }
 .contact img {
   width: 40px;
-  margin-left: 30px;
+  margin: 10px;
   border-radius: 200px;
 }
 .contact .gmail_icon {

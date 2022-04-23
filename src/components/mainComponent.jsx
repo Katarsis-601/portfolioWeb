@@ -6,7 +6,7 @@ export function ContainerLayout(props) {
         maxWidth: "1200px",
         overflow: "auto",
         position: "relative",
-        marginTop: "40px",
+        marginTop: "30px",
         justifyContent: "center",
         width: "90%",
       }}
